@@ -1,87 +1,60 @@
-# 👋 Hi, I'm Josh Laubach
+# Joshua Laubach
 
-📍 San Francisco Bay Area, CA  
-📧 josh.laubach1@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/josh-laubach)
-
-## 🚀 About Me
-
-I'm a **Data Science Graduate Student** at Boston University and a **Professional Math Tutor** with a focus on high school and college-level math, including Pre-Calculus, Calculus I–III, and Statistics.
-
-My background spans applied mathematics, machine learning, and real-world data applications. I specialize in transforming complex datasets into clear, actionable insights and am passionate about both educating students and solving data-driven problems.
-
-Whether it's building predictive models or guiding students through multivariable calculus, I enjoy bringing clarity and confidence to complex concepts.
+**AV Simulation & ML Evaluation Engineer** · San Francisco, CA
+Reinforcement learning, causal inference, and ODD-based evaluation for autonomous systems.
 
 ---
 
-## 🛠️ Technical Skills
+## Projects
 
-- **Languages:** Python, SQL, C++, R (Basic), MATLAB  
-- **ML & Analysis:** Regression, Classification, Clustering, Feature Engineering, PCA, SHAP  
-- **Tools & Libraries:** Scikit-learn, TensorFlow, Keras, Tableau, Google Apps Script  
-- **Data Handling:** Data Cleaning, Aggregation, Pipelines, Modeling  
-- **Certifications:** Python for Data Science, Applied ML, Deep Learning, Python with Excel  
+### [DriveNet — End-to-End AV Simulation & ODD Evaluation](https://github.com/joshlaubach/drivenet-carla-av)
+CARLA 0.9.16 · PPO · Behavior Cloning · Causal Inference
 
----
+End-to-end AV pipeline spanning expert data collection through RL fine-tuning and causal fix validation.
 
-## 💼 Experience
-
-### 🎯 Freelance Data Analyst @ Upwork (May 2022 – Present)
-- Designed a novel algorithm based on the Beta Distribution to improve tournament seeding accuracy by 5%
-- Delivered insights via interactive visualizations to support real-time decision-making
-
-### 📘 Professional Math Tutor @ JL Math Tutoring (May 2022 – Present)
-- Specialized in high school and college-level math: Pre-Calculus, Calculus I–III, Statistics, and test prep (SAT, ACT, AP)
-- Developed personalized lesson plans and cultivated a strong client base through partnerships and digital outreach
-
-### 🧠 Data Engineer @ Telepsy AI (Jan 2022 – May 2022)
-- Developed models to forecast insurance reimbursement timelines
-- Cleaned and optimized large datasets for predictive modeling
+- Collected **~97K expert frames** across **324 ODD condition combinations** (rain, night, fog, traffic density)
+- Full pipeline: behavior cloning → PPO fine-tuning with custom reward shaping + road-rule monitor
+- Applied **propensity score matching** to isolate per-condition impact on policy safety metrics
+- Three sensor suites (RGB cam, multi-cam, LiDAR BEV) with 39-test CI benchmark suite
 
 ---
 
-## 📚 Education
+### [AI Robustness Evaluation — nuScenes Perception](https://github.com/joshlaubach/nuscenes-stability)
+Faster R-CNN · PyTorch · COCO mAP · Calibration Analysis
 
-### Boston University (Aug 2024 – Dec 2025)
-**M.S. in Data Science**  
-_Courses:_ ML Fundamentals, Experimental Design, Advanced AI, Responsible AI
-
-### Caltech CTME & Simplilearn Bootcamp (Mar 2022 – Sep 2023)  
-**Postgrad Certificate in AI & ML**  
-_Courses:_ Deep Learning, NLP, Computer Vision, ML Infrastructure
-
-### UC Berkeley (Aug 2019 – May 2022)  
-**B.A. in Applied Mathematics**  
-_Courses:_ Econometrics, Numerical Analysis, Linear Algebra, Python & SQL for DS
+- Fine-tuned Faster R-CNN ResNet-50 FPN on nuScenes CAM_FRONT with full reproducibility controls
+- Surfaced **14.9pp precision drop at night** (F1: 0.554 day → 0.482 night) driven by false positive inflation
+- Evaluated across day/night, traffic density, and geographic conditions at 9 score thresholds
 
 ---
 
-## 📊 Notable Projects
+### [AI Math Tutoring Platform](https://github.com/joshlaubach/math-problem-generator) *(in progress)*
+Python · FastAPI · React/TypeScript · LLM APIs · SymPy
 
-- **Network Security Attack Detection**  
-  Built interpretable multiclass classifiers with F1 > 0.999 using SHAP, PCA, and Random Forest
-
-- **LA County Property Tax Prediction**  
-  Designed regression models (RMSE: ~$176k) with engineered spacial-temporal features
-
-- **Rhythm Game Tournament System**  
-  Automated ranking system using Beta Distribution, Zipf's Law, and Google Apps Script
+- LLM-driven hint generation with **SymPy-verified solution validation** — hints are mathematically correct, not just plausible
+- Adaptive difficulty engine adjusts problem generation based on per-student KPI tracking
+- Built on FastAPI + React/TypeScript; working toward a fully autonomous AI math tutor
 
 ---
 
-## 🎓 Leadership
+## Skills
 
-- **UC Berkeley Golden Bear Orientation Leader**  
-  Led orientation for 9,000+ students; planned customized events for transfer students
-
-- **Executive Director @ FLEJCON**  
-  Managed a team and logistics for a financial literacy conference with 9 guest speakers
+| Domain | Tools |
+|--------|-------|
+| **RL & ML** | PPO, DQN, Policy Gradient, CNNs, Behavior Cloning, LSTM/GRU, Causal Inference |
+| **Simulation** | CARLA 0.9.16, Reward Shaping, ODD Coverage Design, Scenario Authoring |
+| **Evaluation** | ODD Analysis, Adversarial Edge-Case Testing, Distribution Shift, Threshold Optimization |
+| **Frameworks** | PyTorch, TensorFlow, Scikit-learn, XGBoost |
+| **Languages** | Python, SQL, C++ (basic) |
 
 ---
 
-## 🌱 Looking For
+## Education
 
-- **Internship (12 Weeks, Available Year-Round)**
-- **Contract/Freelance/Full-Time Roles** in data science, analytics, and applied AI
+- **M.S. Data Science & Artificial Intelligence** — Boston University
+- **Postgrad Certificate, AI & ML** — California Institute of Technology
+- **B.A. Applied Mathematics & Statistics** — UC Berkeley
 
-Let’s connect if you're working on data-driven solutions or looking for math tutoring that makes a difference!
+---
+
+[linkedin.com/in/josh-laubach](https://linkedin.com/in/josh-laubach) · [josh.laubach1@gmail.com](mailto:josh.laubach1@gmail.com)
